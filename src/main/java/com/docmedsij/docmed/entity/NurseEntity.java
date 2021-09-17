@@ -2,6 +2,8 @@ package com.docmedsij.docmed.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
@@ -22,6 +24,7 @@ public class NurseEntity {
 	private String password;
 	private String name;
 
-//	@OneToOne(cascade = CascadeType.ALL)
-//	private HospitalEntity hospital;
+	@ManyToOne
+	@JoinColumn(name = "hospital_id", nullable = false)
+	private HospitalEntity hospital;
 }

@@ -4,12 +4,10 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.docmedsij.docmed.dto.NurseDTO;
 
 @Service
-@Transactional
 public interface NurseService {
 	Optional<NurseDTO> findById(int id);
 

@@ -1,6 +1,7 @@
 package com.docmedsij.docmed.dto;
 
 import java.io.Serializable;
+import java.util.Set;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -20,5 +21,6 @@ public class DoctorDTO implements Serializable {
 	private SpecializationDTO specialization;
 	private String username;
 	private String password;
+	private Set<ExaminationDTO> examinations;
 
 }

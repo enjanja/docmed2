@@ -2,7 +2,6 @@ package com.docmedsij.docmed.mapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
 
 import com.docmedsij.docmed.dto.DoctorDTO;
 import com.docmedsij.docmed.dto.HospitalDTO;
@@ -10,7 +9,6 @@ import com.docmedsij.docmed.entity.DoctorEntity;
 import com.docmedsij.docmed.entity.HospitalEntity;
 
 @Component
-@Transactional
 public class HospitalEntityDtoMapper {
 
 	@Autowired

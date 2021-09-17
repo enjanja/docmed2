@@ -17,10 +17,17 @@ public class DoctorController {
 
 //	@Autowired
 //	DoctorService doctorService;
-	@Autowired
+//	@Autowired
 	HospitalRepozitory hospitalService;
-	@Autowired
+
+//	@Autowired
 	HospitalEntityDtoMapper mapper;
+
+	@Autowired
+	public DoctorController(HospitalRepozitory hospitalService, HospitalEntityDtoMapper mapper) {
+		this.hospitalService = hospitalService;
+		this.mapper = mapper;
+	}
 
 	@GetMapping()
 	public String getAllDoctors() {
